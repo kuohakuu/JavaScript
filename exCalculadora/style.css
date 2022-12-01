@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+}
+.fundoCalc {
+  display: table;
+  margin: 10px auto;
+}
+.gridPanel {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  grid-gap: 5px;
+}
+.cleaner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.igual {
+  grid-column: 2/4;
+}

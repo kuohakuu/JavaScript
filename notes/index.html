@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ore!Notes</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="top">
+      <img
+        src="https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png"
+        alt="Logo"
+      />
+      <form>
+        <input
+          type="search"
+          name="searchInput"
+          id="searchInput"
+          class="search"
+          placeholder="Pesquisar notas"
+        />
+      </form>
+    </header>
+    <main>
+      <aside class="side-bar"></aside>
+      <section class="myNotes">
+        <div class="createNote">
+          <div class="inputCreate">
+            <input type="text" placeholder="Título" class="titleNote" />
+            <textarea
+              name="description"
+              placeholder="Descrição"
+              id="description"
+              cols="30"
+              rows="10"
+              class="descNote"
+            ></textarea>
+            <button class="add">Adicionar</button>
+          </div>
+        </div>
+        <div class="actualNotes">
+          <div class="cardNote">
+            <h1>Seja bem vindo ao Ore!Note</h1>
+            <p>
+              Sinta-se a vontade para adicionar o que achar necessário na sua
+              lista de atividades
+            </p>
+            <a href="#" class="deletar">x</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="index.js"></script>
+</html>
