@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+
+.boxes {
+    width: 100px;
+    height: 100px;
+    box-shadow: 4px 4px 2px black;
+    margin: auto;
+}
+
+input::-moz-placeholder {
+    font-size: 25px;
+}
+
+.inputColor {
+    margin: 100px auto;
+    width: 400px;
+    display: block;
+}
+
+.inputColumn,
+.inputRow {
+    margin: 100px auto;
+    width: 400px;
+    height: 40px;
+    display: block;
+
+}
+
+button {
+    margin: auto;
+    width: 200px;
+    height: 40px;
+    display: block;
+}
+
+table {
+    margin: 20px auto;
+}
