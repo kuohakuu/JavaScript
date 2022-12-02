@@ -7,8 +7,8 @@
 
 
 .boxes {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     box-shadow: 4px 4px 2px black;
     margin: auto;
 }
@@ -27,7 +27,7 @@ input::-moz-placeholder {
 .inputRow {
     margin: 100px auto;
     width: 400px;
-    height: 80px;
+    height: 40px;
     display: block;
 
 }
@@ -35,7 +35,7 @@ input::-moz-placeholder {
 button {
     margin: auto;
     width: 200px;
-    height: 100px;
+    height: 40px;
     display: block;
 }
 
