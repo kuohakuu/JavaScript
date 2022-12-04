@@ -2,15 +2,25 @@ const buttonAdd = document.querySelector(".add");
 const notesPanel = document.querySelector(".actualNotes");
 const form = document.querySelector("form");
 
-// form.oninput = function (event) {
-//   event.preventDefault();
-//   let searchValue = document.querySelector(".search").value;
-//   if (searchValue === myNotes.forEach((card) => card.title)) {
-//     console.log("tem esse cara");
-//   } else {
-//     console.log("não tem esse cara");
-//   }
-// };
+form.oninput = function (event) {
+  event.preventDefault();
+  let cardsNote = notesPanel.querySelectorAll('.cardNote')
+  let searchText = document.querySelector('#searchInput').value
+  if(searchText !== ''){
+    cardsNote.forEach(card =>{
+      let titleNoteCard = card.querySelector('h1').textContent.toLocaleLowerCase()
+      let searchTextMinus = searchText.toLocaleLowerCase()
+      if(titleNoteCard.includes(searchTextMinus)){
+        card.style.display = 'block'
+      }else{
+        card.style.display = 'none'
+      }
+    })
+  }else{
+    cardsNote.forEach(card => card.style.display = 'block')
+  }
+  
+};
 
 let myNotes = [];
 
